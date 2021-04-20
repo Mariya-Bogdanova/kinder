@@ -1,0 +1,14 @@
+body{
+  background-color: rgb(255, 252, 243);
+}
+header{
+  padding-left: 70px;
+  padding-top: 10px ;
+  background-color: #def9fc;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #20c9d140;
+  font-family:fantasy;
+  font-style: italic;
+  font-size: 22px;
+}
