@@ -10,13 +10,13 @@ const ThemeSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  img: {
-    type: String,
-  },
+  img: String,
+  voiceFileName: String
 });
 
 
 export const EarthModel = new mongoose.model('earthly_world', ThemeSchema)
 export const WaterModel = new mongoose.model('underwater_world', ThemeSchema)
+export const yourAnimalModel = new mongoose.model('yourAnimal', ThemeSchema)
 
-// export default mongoose.model('Theme', ThemeSchema);
+

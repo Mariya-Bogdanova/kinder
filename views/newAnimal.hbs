@@ -1,0 +1,32 @@
+<div class="box">
+<h3>Добавление нового животного:</h3>
+<form action="/animal" method="POST" enctype="multipart/form-data" name="newAnimalForm">
+
+  <div id="contentBox">
+
+    <div id="boxLeft">
+      <label for="img">Фото:<br>
+        <input type="file" name="img" required id="img" accept="image/*">
+      </label>
+      <div id="output">
+        <img class="thumb" src="/images.jpeg" alt="">
+      </div>
+    </div>
+
+    <div>
+      <div class="articleForm">
+        <label for="title">Название:<br>
+          <input id="title" name="title" type="text" required>
+        </label>
+      </div>
+
+      <label for="description">Описание:<br>
+        <textarea cols="50%" rows="15" id="description" name="description" type="text"
+          required></textarea>
+      </label>
+    </div>
+  </div>
+
+  <button type="submit">Добавить</button>
+</form>
+</div>

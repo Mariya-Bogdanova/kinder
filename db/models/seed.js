@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import { WaterModel, EarthModel } from '../models/theme.js';
-
+import quickStart from '../../src/speech.js';
 mongoose.connect('mongodb://localhost:27017/znaika', { useNewUrlParser: true });
 
 const waterTitle = [
@@ -61,13 +61,16 @@ const earthImg = [
   '/photo/earthly_world/orangutan.jpg',
   '/photo/earthly_world/zayac-rusak.jpg',
 ];
+
 async function createAnimal(model, title, description, img, number) {
   for (let i = 0; i < number; i++) {
     await model.insertMany({
       title: title[i],
       description: description[i],
       img: img[i],
+      voiceFileName: `public/voice_acting/${title[i]}.wav`
     });
+    quickStart(description[i], title[i] )
   }
 }
 

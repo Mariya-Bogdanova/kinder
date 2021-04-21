@@ -1,20 +1,50 @@
 <header>
   <h1>в мире животных</h1>
+  <a href="/voiceActing/stop"><img id="stop" src="stop.png" alt="stop"></a>
+  <a id="add" href="/animal">+</a>
+
+  <div class="form_toggle">
+    <div class="form_toggle-item item-1">
+      <input id="fid-1" type="radio" name="radio" value="children" checked>
+      <label for="fid-1">children</label>
+    </div>
+    <div class="form_toggle-item item-2">
+      <input id="fid-2" type="radio" name="radio" value="parents">
+      <label for="fid-2">parents</label>
+    </div>
+  </div>
 </header>
 
 <main>
+  {{#if yourAnimals}}
+  <ul>
+    {{#each yourAnimals}}
+    <li><a href="/voiceActing/{{id}}"><img class="imgPhoto" src="{{img}}" alt="{{title}}">
+        <p>{{title}}</p>
+      </a></li>
+    {{/each}}
+  </ul>
+  {{/if}}
+  {{#if landAnimals}}
   <ul>
     {{#each landAnimals}}
-    <li><a href=""><img src="{{img}}" alt="{{title}}">
+    <li><a href="/voiceActing/{{id}}"><img class="imgPhoto" src="{{img}}" alt="{{title}}">
         <p>{{title}}</p>
       </a></li>
     {{/each}}
   </ul>
+  {{/if}}
+  {{#if seaСreatures}}
   <ul>
     {{#each seaСreatures}}
-    <li><a href=""><img src="{{img}}" alt="{{title}}">
+    <li><a href="/voiceActing/{{id}}"><img class="imgPhoto" src="{{img}}" alt="{{title}}">
         <p>{{title}}</p>
       </a></li>
     {{/each}}
   </ul>
+  {{/if}}
+
 </main>
+<footer>
+  <a href="">родительский режим</a>
+</footer>
