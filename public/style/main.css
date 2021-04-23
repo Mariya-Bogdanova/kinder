@@ -1,14 +1,17 @@
-main{
+main {
   height: 80vh;
   overflow: auto;
 }
 ul {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 22px;
 }
 li {
+  margin-right: 28px;
+  position: relative;
   list-style-type: none;
-  width: 352px;
+  width: 330px;
   height: 270px;
   padding: 25px 25px 50px;
 }
@@ -30,3 +33,16 @@ p {
   margin-top: 0%;
   text-align: center;
 }
+.delImg {
+  width: 17px;
+  position: absolute;
+  top: 66px;
+  left: -5px;
+}
+.upImg {
+  width: 22px;
+  position: absolute;
+  top: 33px;
+  left: -6px;
+}
+

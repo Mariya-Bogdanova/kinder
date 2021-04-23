@@ -1,28 +1,50 @@
-.box{
-  width: 60%;
+.box {
+  background-color: #cfcfcf38;
+  width: min-content;
   margin: 40px 40px;
+  padding: 35px;
+  box-shadow: 0 0 15px #9e9e9e;
+  border-radius: 8px;
 }
-#contentBox, form{
+#contentBox,
+form {
   display: flex;
 }
-#boxLeft{
+#boxLeft {
   width: 450px;
 }
 #output {
-  margin-top: 5px;
+  margin-top: 22px;
   margin-right: 50px;
   height: 290px;
 }
 .thumb {
+  border-radius: 10px;
   height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
-button{
+button {
   height: 22px;
   align-self: flex-end;
 }
-input{
+input {
+  margin-bottom: 10px;
   border-radius: 5px;
+  border: white;
+  height: 26px;
+  padding-left: 13px;
 }
-textarea{
-  border-radius: 5px;
+textarea {
+  border-radius: 8px;
+  text-align: justify;
+  padding: 13px;
+  border: white;
+  line-height: 1.5;
+  font-family: sans-serif;
+  margin-right: 15px;
 }
+button{
+  margin: 3px;
+}
+

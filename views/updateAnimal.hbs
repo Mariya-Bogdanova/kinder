@@ -1,0 +1,32 @@
+<div class="box">
+  <h3>Изменение информации о животном:</h3>
+<form action="/animal/{{animal.id}}" method="post" enctype="multipart/form-data" name="updateAnimalForm">
+
+  <div id="contentBox">
+
+    <div id="boxLeft">
+      <label for="img">Фото:<br>
+        <input type="file" name="img" id="img" accept="image/*">
+      </label>
+      <div id="output">
+        <img class="thumb" src="{{animal.img}}" alt="{{animal.title}}">
+      </div>
+    </div>
+
+    <div>
+      <div class="articleForm">
+        <label for="title">Название:<br>
+          <input id="title" name="title" type="text" required value="{{animal.title}}">
+        </label>
+      </div>
+
+      <label for="description">Описание:<br>
+        <textarea cols="50%" rows="14" id="description" name="description" type="text"
+          required>{{animal.description}}</textarea>
+      </label>
+
+    </div>
+  </div>
+  <button type="submit">Изменить</button>
+</form>
+</div>

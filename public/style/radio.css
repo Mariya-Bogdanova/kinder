@@ -32,8 +32,8 @@
 
 /* Checked */
 .form_toggle .item-1 input[type='radio']:checked + label {
-  background: #ffc5c5;
+  background: #bbff93;
 }
 .form_toggle .item-2 input[type='radio']:checked + label {
-  background: #bbffbb;
+  background: #bbff93;
 }
