@@ -13,7 +13,7 @@
 
 ![screenshot](readme-assets/switchEditAdd.gif)
 
-Ссылка на видео работы приложения: https://youtu.be/kNfMSA0oP1w
+Ссылка на видео работы приложения: https://youtu.be/UjjZE9bKX_c
 
 ### Над приложением работали:
 
