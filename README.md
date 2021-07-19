@@ -1,4 +1,4 @@
-![screenshot](readme-assets/KinderTheme.gif)
+![screenshot](readme-assets/logo.png)
 
 
 Приложение для обучение детей окружающему миру <br/>
